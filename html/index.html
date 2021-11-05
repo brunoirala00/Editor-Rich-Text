@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Adicionando ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Editor Rich-Text</title>
+
+
+</head>
+
+<body>
+    <header>
+        <div id="txt-header">
+            <h1>Free Editor Rich-Text</h1>
+        </div>
+        <div id='symbols'>
+            <button type="button" data-cmd="bold">
+                <i class="fas fa-bold" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" data-cmd="italic">
+                <i class="fas fa-italic" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" data-cmd="showCode" name="active">
+                <i class="fas fa-code" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" data-cmd="insertOrderedList">
+                <i class="fas fa-list" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" data-cmd="underline">
+                <i class="fas fa-underline" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" data-cmd="createLink">
+                <i class="fas fa-link" aria-hidden="true"></i>
+            </button>
+
+            <button type="button" data-cmd="insertImage">
+                <i class="fas fa-images" aria-hidden="true"></i>
+            </button>
+
+        </div>
+    </header>
+
+    <section>
+        <iframe id="output" name="textField"></iframe>
+    </section>
+
+    <script src="../js/script.js">
+    </script>
+</body>
+
+</html>
